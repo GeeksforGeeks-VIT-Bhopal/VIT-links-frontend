@@ -4,7 +4,7 @@ import axios from 'axios';
 import Card from './Card';
 
 function APIcall(){
-    const [allPeople, setAllPeople] = useState([sampleData]);
+    const [allPeople, setAllPeople] = useState(sampleData);
 
     useEffect(() => {
         async function fetchData(){
