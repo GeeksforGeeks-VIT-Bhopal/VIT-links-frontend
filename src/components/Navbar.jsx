@@ -1,5 +1,4 @@
 import React from 'react';
-import APIcall from './APIcall';
 
 export default function Navbar() {
     return (

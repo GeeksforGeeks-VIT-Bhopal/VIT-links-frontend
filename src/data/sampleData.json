@@ -1,8 +1,9 @@
 [
     {
-        "name": "This is being loaded from local data, API fetch was unsuccessful",
+        "name": "Sajal Gupta",
+        "githubUsername": "guptasajal411",
         "profilePicture": "https://github.com/guptasajal411.png",
-        "description": "Full Stack Web Developer | Web Lead @ GeeksforGeeks",
+        "description": "This is being loaded from local data, API fetch was unsuccessful",
         "university": "VIT Bhopal",
         "branch": "Computer Science & Engineering",
         "graduationYear": 2024,

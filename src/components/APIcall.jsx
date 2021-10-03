@@ -1,13 +1,15 @@
-import React, {useState, useEffect} from 'react';
-import sampleData from "../data/sampleData.json"
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from './Card';
+import sampleData from "../data/sampleData.json"
+import { Route, Switch } from 'react-router-dom';
+import About from '../pages/About';
 
-function APIcall(){
+function APIcall() {
     const [allPeople, setAllPeople] = useState(sampleData);
 
     useEffect(() => {
-        async function fetchData(){
+        async function fetchData() {
             await axios
                 .get("http://localhost:3001/")
                 .then((response) => setAllPeople(response.data))
@@ -20,17 +22,23 @@ function APIcall(){
         fetchData();
     }, []);
 
-    return(
+    return (
         <div className="cardWrapper">
             {allPeople.map((person) => (
-                <Card
-                    name={person.name}
-                    key={person.profilePicture}
-                    profilePicture={person.profilePicture}
-                    description={person.description}
-                    university={person.university}
-                    branch={person.branch}
-                    graduationYear={person.graduationYear} />
+                <>
+                    <Card
+                        name={person.name}
+                        githubUsername={person.githubUsername}
+                        key={person.profilePicture}
+                        profilePicture={person.profilePicture}
+                        description={person.description}
+                        university={person.university}
+                        branch={person.branch}
+                        graduationYear={person.graduationYear} />
+                    <Switch>
+                        <Route path={"/hello"} component={About} />
+                    </Switch>
+                </>
             ))}
         </div>
     );

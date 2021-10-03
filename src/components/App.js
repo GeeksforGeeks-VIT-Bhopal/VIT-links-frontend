@@ -14,6 +14,9 @@ function App(){
                 <Route path="/" component={APIcall} exact />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
+                <Route path="/:githubUsername" exact>
+                    single profile page
+                </Route>
                 <Route component={Error} />
             </Switch>
         </>
