@@ -23,12 +23,10 @@
 }
 
 .card:hover{
-    transform: scale(1.033);
-}
-
-.card:focus{
+    transform: scale(1.025);
     border: 0.5px solid rgb(13 110 253);
-    box-shadow: 0 0 0 0.35rem rgb(13 110 253 / 50%);}
+    box-shadow: 0 0 0 0.4rem rgb(13 110 253 / 50%);
+}
 
 .card .img{
     border-radius: 50%;
