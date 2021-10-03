@@ -1,71 +1,23 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 import Card from './Card';
+import sampleData from "../data/sampleData.json"
 import "./styles.css";
 
 function App(){
+    const [people, setPeople] = useState(sampleData);
+
     return(
         <div>
             <div className="cardWrapper">
-                <Card name="Sajal"
-                profilePicture="https://github.com/guptasajal411.png"
-                description="Full Stack Web Developer | Web Lead @ GeeksforGeeks"
-                university="VIT Bhopal"
-                branch="Computer Science & Engineering"
-                graduationYear="2024" />
-                <Card name="Sajal"
-                profilePicture="https://github.com/guptasajal411.png"
-                description="Full Stack Web Developer | Web Lead @ GeeksforGeeks"
-                university="VIT Bhopal"
-                branch="Computer Science & Engineering"
-                graduationYear="2024" />
-                <Card name="Sajal"
-                profilePicture="https://github.com/guptasajal411.png"
-                description="Full Stack Web Developer | Web Lead @ GeeksforGeeks"
-                university="VIT Bhopal"
-                branch="Computer Science & Engineering"
-                graduationYear="2024" />
-                <Card name="Sajal"
-                profilePicture="https://github.com/guptasajal411.png"
-                description="Full Stack Web Developer | Web Lead @ GeeksforGeeks"
-                university="VIT Bhopal"
-                branch="Computer Science & Engineering"
-                graduationYear="2024" />
-                <Card name="Sajal"
-                profilePicture="https://github.com/guptasajal411.png"
-                description="Full Stack Web Developer | Web Lead @ GeeksforGeeks"
-                university="VIT Bhopal"
-                branch="Computer Science & Engineering"
-                graduationYear="2024" />
-                <Card name="Sajal"
-                profilePicture="https://github.com/guptasajal411.png"
-                description="Full Stack Web Developer | Web Lead @ GeeksforGeeks"
-                university="VIT Bhopal"
-                branch="Computer Science & Engineering"
-                graduationYear="2024" />
-                <Card name="Sajal"
-                profilePicture="https://github.com/guptasajal411.png"
-                description="Full Stack Web Developer | Web Lead @ GeeksforGeeks"
-                university="VIT Bhopal"
-                branch="Computer Science & Engineering"
-                graduationYear="2024" />
-                <Card name="Sajal"
-                profilePicture="https://github.com/guptasajal411.png"
-                description="Full Stack Web Developer | Web Lead @ GeeksforGeeks"
-                university="VIT Bhopal"
-                branch="Computer Science & Engineering"
-                graduationYear="2024" />
-                <Card name="Sajal"
-                profilePicture="https://github.com/guptasajal411.png"
-                description="Full Stack Web Developer | Web Lead @ GeeksforGeeks"
-                university="VIT Bhopal"
-                branch="Computer Science & Engineering"
-                graduationYear="2024" />
-                <Card name="Sajal"
-                profilePicture="https://github.com/guptasajal411.png"
-                description="Full Stack Web Developer | Web Lead @ GeeksforGeeks"
-                university="VIT Bhopal"
-                branch="Computer Science & Engineering"
-                graduationYear="2024" />
+                {people.map((person) => (
+                <Card name={person.name}
+                profilePicture={person.profilePicture}
+                description={person.description}
+                university={person.university}
+                branch={person.branch}
+                graduationYear={person.graduationYear} />
+                ))}
             </div>
         </div>
     );
