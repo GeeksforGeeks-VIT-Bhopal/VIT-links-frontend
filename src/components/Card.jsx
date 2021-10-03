@@ -10,7 +10,7 @@ export default function Card(props) {
             <p>{props.university + ' ' + props.branch}</p>
             <p>{props.graduationYear}</p>
             <b>{props.githubUsername}</b>
-            <a href={"http://localhost:3001/" + props.githubUsername}>Go to individual profile</a>
+            <a href={"/" + props.githubUsername}>Go to individual profile</a>
         </div>
     );
 }

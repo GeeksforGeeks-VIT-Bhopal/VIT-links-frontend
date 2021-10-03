@@ -4,6 +4,7 @@ import APIcall from './APIcall';
 import Navbar from './Navbar';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
+import Singlecard from "./Singlecard";
 import "./styles.css";
 
 function App(){
@@ -14,8 +15,8 @@ function App(){
                 <Route path="/" component={APIcall} exact />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
-                <Route path="/:githubUsername" exact>
-                    single profile page
+                <Route path="/:username" exact>
+                    <Singlecard />
                 </Route>
                 <Route component={Error} />
             </Switch>

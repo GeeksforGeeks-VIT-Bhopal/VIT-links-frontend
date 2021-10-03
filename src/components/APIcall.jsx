@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from './Card';
 import sampleData from "../data/sampleData.json"
-import { Route, Switch } from 'react-router-dom';
-import About from '../pages/About';
 
 function APIcall() {
     const [allPeople, setAllPeople] = useState(sampleData);
@@ -35,9 +33,6 @@ function APIcall() {
                         university={person.university}
                         branch={person.branch}
                         graduationYear={person.graduationYear} />
-                    <Switch>
-                        <Route path={"/hello"} component={About} />
-                    </Switch>
                 </>
             ))}
         </div>
