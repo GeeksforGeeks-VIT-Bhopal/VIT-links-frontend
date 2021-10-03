@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import sampleData from "../data/sampleData.json"
 import axios from 'axios';
+import Card from './Card';
 
 function APIcall(){
-    const [allPeople, setAllPeople] = useState([]);
+    const [allPeople, setAllPeople] = useState([sampleData]);
 
     useEffect(() => {
         async function fetchData(){
@@ -20,9 +21,16 @@ function APIcall(){
     }, []);
 
     return(
-        <div>
+        <div className="cardWrapper">
             {allPeople.map((person) => (
-                <p>{person.name}</p>
+                <Card
+                    name={person.name}
+                    key={person.profilePicture}
+                    profilePicture={person.profilePicture}
+                    description={person.description}
+                    university={person.university}
+                    branch={person.branch}
+                    graduationYear={person.graduationYear} />
             ))}
         </div>
     );

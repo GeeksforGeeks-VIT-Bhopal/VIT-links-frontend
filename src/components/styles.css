@@ -31,6 +31,7 @@
     box-shadow: 0 0 0 0.35rem rgb(13 110 253 / 50%);}
 
 .card .img{
+    border-radius: 50%;
     width: 50%;
     margin: 1rem 0;
 }
