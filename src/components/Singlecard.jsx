@@ -6,7 +6,7 @@ import sampleSingleData from "../data/sampleSingleData.json"
 export default function Singlecard() {
     var [state, setState] = useState(sampleSingleData);
     const params = useParams();
-    const URL = "http://localhost:3001/" + params.username;
+    const URL = "https://vit-links-backend.herokuapp.com/" + params.username;
     useEffect(() => {
         async function fetchData() {
             await axios

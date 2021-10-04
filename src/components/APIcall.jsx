@@ -9,7 +9,7 @@ function APIcall() {
     useEffect(() => {
         async function fetchData() {
             await axios
-                .get("http://localhost:3001/")
+                .get("https://vit-links-backend.herokuapp.com/")
                 .then((response) => setAllPeople(response.data))
                 .then(console.log("hiii"))
                 .catch((error) => {
