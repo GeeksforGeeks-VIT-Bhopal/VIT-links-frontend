@@ -1,0 +1,17 @@
+nav{
+    background-color: #08D9D6;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: #252A34;
+    font-size: 1.25rem;
+    margin: auto 1rem;
+    text-decoration: none;
+}
+
+nav .nav-links{
+    margin-left: auto;
+}
