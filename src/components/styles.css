@@ -2,38 +2,3 @@
     margin: 0;
     padding: 0;
 }
-
-.cardWrapper{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin: 2rem auto;
-    width: 80vw;
-}
-
-.card{
-    border: 0.5px solid gray;
-    border-radius: 5px;
-    text-align: center;
-    max-width: 400px;
-    padding-bottom: 1rem;
-    transition: all 0.25s;
-}
-
-.card:hover{
-    transform: scale(1.025);
-    border: 0.5px solid rgb(13 110 253);
-    box-shadow: 0 0 0 0.4rem rgb(13 110 253 / 50%);
-}
-
-.card .img{
-    border-radius: 50%;
-    width: 50%;
-    margin: 1rem 0;
-}
-
-.card h2{
-    margin-bottom: 0.5rem;
-}
