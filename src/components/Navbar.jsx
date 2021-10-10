@@ -1,11 +1,15 @@
 import React from 'react';
+import "./Navbar.css"
 
 export default function Navbar() {
     return (
-        <>
-            <a href="/">home</a>
-            <a href="/about">about</a>
-            <a href="/contact">contact</a>
-        </>
+        <nav>
+            <a href="/">VIT Links! 💥</a>
+            <div className="nav-links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </nav>
     );
 }
