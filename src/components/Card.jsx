@@ -7,8 +7,6 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 
-import "./Card.css";
-import { flexbox } from '@mui/system';
 
 const ProfileCard = (props) => {
     console.log("hello")
