@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Card from './Card';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import ProfileCard from './Card';
 import sampleData from "../data/sampleData.json"
 
 function APIcall() {
@@ -21,10 +23,11 @@ function APIcall() {
     }, []);
 
     return (
-        <div className="cardWrapper">
+        <Box sx={{marginLeft: 10}}>
+            <Grid container spacing={1}>
             {allPeople.map((person) => (
-                <>
-                    <Card
+                <Grid item xs={12} sm={6} lg={3}>
+                    <ProfileCard
                         name={person.name}
                         githubUsername={person.githubUsername}
                         key={person.profilePicture}
@@ -33,9 +36,10 @@ function APIcall() {
                         university={person.university}
                         branch={person.branch}
                         graduationYear={person.graduationYear} />
-                </>
+                </Grid>
             ))}
-        </div>
+            </Grid>
+        </Box>
     );
 }
 
