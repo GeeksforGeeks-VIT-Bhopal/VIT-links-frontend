@@ -1,0 +1,32 @@
+#dp{
+    border-radius: 100%;
+    height: 12%;
+    width:12%;
+    margin-left: 44%;
+    margin-top: 3%;
+}
+#name{
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Comfortaa', cursive;
+}
+#desc{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+#univicon{
+    margin-right: 1%;
+    font-size: 175%;
+     text-align: center;
+  
+}
+#univ{
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Ubuntu', sans-serif;
+}
+#butn{
+    
+    text-align: center;
+    padding-bottom: 1%;
+}
