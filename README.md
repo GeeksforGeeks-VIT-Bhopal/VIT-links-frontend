@@ -2,8 +2,8 @@
 VITLinks is the place where you can find & connect with fellow VITians! You can also browse other students, check out their social links & share the unique link for all your needs! Add your name to VITLinks by a simple "contribution" to our **[backend repository!](https://github.com/GeeksforGeeks-VIT-Bhopal/VIT-links-backend)**<br>
 You can contribute to this project in a lot of ways, we will be opening issues soon but feel free to open them if you have any ideas!
 
-VIT Links homepage - **https://vit-links-frontend.vercel.app/**<br>
-Your VIT Links unique profile! - **https://vit-links-frontend.vercel.app/githubUsername**
+VIT Links homepage - **https://VIT-links-frontend.guptasajal411.repl.co**<br>
+Your VIT Links unique profile! - **https://VIT-links-frontend.guptasajal411.repl.co/githubUsername**
 
 **<ins>Note</ins>** - Adding your name to VITLinks is done in our [backend repository](https://github.com/GeeksforGeeks-VIT-Bhopal/VIT-links-backend) & <ins>**wont**</ins> be counted as a valid hacktoberfest contribution.
 
@@ -19,7 +19,7 @@ You can sign up anytime between October 1 and October 31. Just be sure to sign u
 ![React.js](https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
 ![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Repl.it](https://img.shields.io/badge/replit-667881?style=for-the-badge&logo=replit&logoColor=white)
 
 ## 🤩 Contributors :
 
