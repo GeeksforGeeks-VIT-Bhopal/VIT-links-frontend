@@ -15,3 +15,13 @@ nav a{
 nav .nav-links{
     margin-left: auto;
 }
+#imga{
+    height: 50px;
+    width: 50px;
+}
+.navbar-item{
+    float: right;
+}
+#navflr{
+    float: right;
+}
